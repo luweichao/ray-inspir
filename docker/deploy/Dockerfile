@@ -1,7 +1,7 @@
 # The deploy Docker image build a self-contained Ray instance suitable
 # for end users.
 
-FROM 192.168.1.40:5000/inspir-ray/base-deps
+FROM registry.cn-qingdao.aliyuncs.com/inspir-ray/base-deps:0.5.0
 ADD ray.tar /ray
 ADD git-rev /ray/git-rev
 COPY start_head.sh /ray
